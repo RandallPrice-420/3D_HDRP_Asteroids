@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5350100295069139743}
   - component: {fileID: 1756509221}
   - component: {fileID: 1756509225}
+  - component: {fileID: 253223571693638945}
   m_Layer: 0
   m_Name: Rock1
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669485172037783673}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.0000000814605, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 76.16, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -108,7 +109,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669485172037783673}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -129,3 +130,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fractured: {fileID: 0}
+--- !u!114 &253223571693638945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669485172037783673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a4fa56b42d8324bb02a3bfa5a97960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MouseDragSpeed: 0.1
+  RotateSpeed: 20
+  _mouseLeftClick:
+    m_Name: Mouse Left Click
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: cf3b3dbb-c876-4c28-8e1f-29deec6ded22
+    m_Processors: 
+    m_Interactions: Press
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 006b1948-f67a-465a-ae80-9891eae59189
+      m_Path: <Mouse>/leftButton
+      m_Interactions: Press
+      m_Processors: 
+      m_Groups: 
+      m_Action: Mouse Left Click
+      m_Flags: 0
+    m_Flags: 0
+  _mouseRightClick:
+    m_Name: Mouse Right Click
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: f9b972ef-c8d4-43c8-ba66-019bf61b705c
+    m_Processors: 
+    m_Interactions: Press
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 523c278f-0c3e-445e-be6b-ca0ad3440300
+      m_Path: <Mouse>/rightButton
+      m_Interactions: Press
+      m_Processors: 
+      m_Groups: 
+      m_Action: Mouse Right Click
+      m_Flags: 0
+    m_Flags: 0
+  _mousePosition:
+    m_Name: Mouse Position
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: 8a9b73a9-db60-452b-8833-44c16499eed0
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 220c26f2-e9a1-4c72-bc3b-b69de3f7ec49
+      m_Path: <Mouse>/position
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Mouse Position
+      m_Flags: 0
+    m_Flags: 0
