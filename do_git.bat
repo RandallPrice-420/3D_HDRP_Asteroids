@@ -110,6 +110,10 @@ git config --global http.postBuffer 524288000
 git config --global core.compression 0
 echo.
 
+@echo on
+git lfs track "*.psd"
+@echo off
+
 set filePath=README.md
 if exist %filePath% (
      del %filePath%
