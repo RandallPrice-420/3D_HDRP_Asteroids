@@ -111,6 +111,7 @@ git config --global core.compression 0
 echo.
 
 @echo on
+git lfs track "*.dae"
 git lfs track "*.hdr"
 git add .gitattributes
 @echo off
