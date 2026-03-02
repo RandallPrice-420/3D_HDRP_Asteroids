@@ -111,7 +111,8 @@ git config --global core.compression 0
 echo.
 
 @echo on
-git lfs track "*.psd"
+git lfs track "*.hdr"
+git add .gitattributes
 @echo off
 
 set filePath=README.md
